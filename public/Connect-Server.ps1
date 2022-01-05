@@ -16,7 +16,11 @@ Function Connect-Server {
 
         [Parameter(Mandatory)]
         [PSCredential]
-        $Credential
+        $Credential,
+
+        [Parameter(Mandatory = $false)]
+        [String]
+        $2FAPin
 
     )
 
@@ -37,6 +41,7 @@ Function Connect-Server {
         Set-ClientTlsProtocols -ErrorAction Stop
     
         $Uri = "{0}/ams/shared/api/security/login" -f $script:Server
+        $2faUri = "{0}/ams/shared/api/security/verify_2factor" -f $script:Server
 
         $script:Session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
 
@@ -72,7 +77,33 @@ Function Connect-Server {
         $script:CSRFToken = $Request.Headers.'x-dell-csrf-token'
         $script:Headers.Add("x-dell-csrf-token", "$script:CSRFToken")
 
+        if ($2FAPin) {
+            $currentCode = @{currentCode = $2fapin} | ConvertTo-Json
 
+            $2faSplat = @{
+                Uri             = $2faUri
+                Headers         = $$script:Headers
+                Body            = $currentCode
+                Method          = 'POST'
+                WebSession      = $Session
+                UseBasicParsing = $True
+                ErrorAction     = 'Stop'
+                TimeoutSec      = 15
+            }
+            
+            Try {
+            Invoke-RestMethod @2faSplat
+            }
+            Catch {
+                $writeErrorSplat = @{
+                    Message  = "Could not authenticate to '$server' in org '$org'. Ensure 2fa pin is correct."
+                    Category = 'AuthenticationError'
+                }
+                Write-Error @writeErrorSplat
+
+                break;
+            }
+        }
     }
     End {
         # Be nice and set session security protocols back to how we found them.
