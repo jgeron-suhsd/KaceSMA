@@ -20,7 +20,7 @@ Function Connect-Server {
 
         [Parameter(Mandatory = $false)]
         [String]
-        $2FAPin
+        $MFAPin
 
     )
 
@@ -41,7 +41,7 @@ Function Connect-Server {
         Set-ClientTlsProtocols -ErrorAction Stop
     
         $Uri = "{0}/ams/shared/api/security/login" -f $script:Server
-        $2faUri = "{0}/ams/shared/api/security/verify_2factor" -f $script:Server
+        $MFAUri = "{0}/ams/shared/api/security/verify_2factor" -f $script:Server
 
         $script:Session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
 
@@ -77,12 +77,12 @@ Function Connect-Server {
         $script:CSRFToken = $Request.Headers.'x-dell-csrf-token'
         $script:Headers.Add("x-dell-csrf-token", "$script:CSRFToken")
 
-        if ($2FAPin) {
-            $currentCode = @{currentCode = $2fapin} | ConvertTo-Json
+        if ($MFAPin) {
+            $currentCode = @{currentCode = $Mfapin} | ConvertTo-Json
 
-            $2faSplat = @{
-                Uri             = $2faUri
-                Headers         = $$script:Headers
+            $MFASplat = @{
+                Uri             = $MFAUri
+                Headers         = $script:Headers
                 Body            = $currentCode
                 Method          = 'POST'
                 WebSession      = $Session
@@ -92,7 +92,7 @@ Function Connect-Server {
             }
             
             Try {
-            Invoke-RestMethod @2faSplat
+            $MFARequest = Invoke-RestMethod @MFASplat
             }
             Catch {
                 $writeErrorSplat = @{

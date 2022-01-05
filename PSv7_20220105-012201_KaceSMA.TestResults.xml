@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="72" errors="0" failures="72" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2022-01-05" time="13:22:02">
+  <environment user="jgeron" clr-version="Unknown" cwd="C:\PS\KaceSMA\Build" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition3" os-version="10.0.19043" machine-name="DOD400589" nunit-version="2.5.8.0" user-domain="SUHSD" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="9.6445" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\PS\KaceSMA\tests\functions.Tests.ps1" executed="True" result="Failure" success="False" time="7.6128" asserts="0" description="C:\PS\KaceSMA\tests\functions.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="General Function Tests" executed="True" result="Failure" success="False" time="6.7083" asserts="0" description="General Function Tests">
+            <results>
+              <test-suite type="TestFixture" name="General Function Tests.Get-MachineInventory has valid structure" executed="True" result="Failure" success="False" time="0.5101" asserts="0" description="General Function Tests.Get-MachineInventory has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-MachineInventory.ps1 should exist" name="General Function Tests.Get-MachineInventory has valid structure.PUBLIC function Get-MachineInventory.ps1 should exist" time="0.2782" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-MachineInventory.ps1 is valid Powershell code" name="General Function Tests.Get-MachineInventory has valid structure.Get-MachineInventory.ps1 is valid Powershell code" time="0.0287" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-CurrentUserAccount has valid structure" executed="True" result="Failure" success="False" time="0.6973" asserts="0" description="General Function Tests.Get-CurrentUserAccount has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-CurrentUserAccount.ps1 should exist" name="General Function Tests.Get-CurrentUserAccount has valid structure.PUBLIC function Get-CurrentUserAccount.ps1 should exist" time="0.0234" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-CurrentUserAccount.ps1 is valid Powershell code" name="General Function Tests.Get-CurrentUserAccount has valid structure.Get-CurrentUserAccount.ps1 is valid Powershell code" time="0.013" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-UserPermissions has valid structure" executed="True" result="Failure" success="False" time="0.8459" asserts="0" description="General Function Tests.Get-UserPermissions has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-UserPermissions.ps1 should exist" name="General Function Tests.Get-UserPermissions has valid structure.PUBLIC function Get-UserPermissions.ps1 should exist" time="0.0187" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-UserPermissions.ps1 is valid Powershell code" name="General Function Tests.Get-UserPermissions has valid structure.Get-UserPermissions.ps1 is valid Powershell code" time="0.0207" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-AgentlessInventory has valid structure" executed="True" result="Failure" success="False" time="1.0218" asserts="0" description="General Function Tests.Get-AgentlessInventory has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-AgentlessInventory.ps1 should exist" name="General Function Tests.Get-AgentlessInventory has valid structure.PUBLIC function Get-AgentlessInventory.ps1 should exist" time="0.0229" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-AgentlessInventory.ps1 is valid Powershell code" name="General Function Tests.Get-AgentlessInventory has valid structure.Get-AgentlessInventory.ps1 is valid Powershell code" time="0.0409" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-OperatingSystemInventory has valid structure" executed="True" result="Failure" success="False" time="1.192" asserts="0" description="General Function Tests.Get-OperatingSystemInventory has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-OperatingSystemInventory.ps1 should exist" name="General Function Tests.Get-OperatingSystemInventory has valid structure.PUBLIC function Get-OperatingSystemInventory.ps1 should exist" time="0.0435" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-OperatingSystemInventory.ps1 is valid Powershell code" name="General Function Tests.Get-OperatingSystemInventory has valid structure.Get-OperatingSystemInventory.ps1 is valid Powershell code" time="0.0151" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-MachineProcess has valid structure" executed="True" result="Failure" success="False" time="1.3902" asserts="0" description="General Function Tests.Get-MachineProcess has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-MachineProcess.ps1 should exist" name="General Function Tests.Get-MachineProcess has valid structure.PUBLIC function Get-MachineProcess.ps1 should exist" time="0.012" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-MachineProcess.ps1 is valid Powershell code" name="General Function Tests.Get-MachineProcess has valid structure.Get-MachineProcess.ps1 is valid Powershell code" time="0.066" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-MachineService has valid structure" executed="True" result="Failure" success="False" time="1.5354" asserts="0" description="General Function Tests.Get-MachineService has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-MachineService.ps1 should exist" name="General Function Tests.Get-MachineService has valid structure.PUBLIC function Get-MachineService.ps1 should exist" time="0.0137" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-MachineService.ps1 is valid Powershell code" name="General Function Tests.Get-MachineService has valid structure.Get-MachineService.ps1 is valid Powershell code" time="0.019" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-SoftwareInventory has valid structure" executed="True" result="Failure" success="False" time="1.6645" asserts="0" description="General Function Tests.Get-SoftwareInventory has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-SoftwareInventory.ps1 should exist" name="General Function Tests.Get-SoftwareInventory has valid structure.PUBLIC function Get-SoftwareInventory.ps1 should exist" time="0.0202" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-SoftwareInventory.ps1 is valid Powershell code" name="General Function Tests.Get-SoftwareInventory has valid structure.Get-SoftwareInventory.ps1 is valid Powershell code" time="0.0093" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-StartupProgramInventory has valid structure" executed="True" result="Failure" success="False" time="1.805" asserts="0" description="General Function Tests.Get-StartupProgramInventory has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-StartupProgramInventory.ps1 should exist" name="General Function Tests.Get-StartupProgramInventory has valid structure.PUBLIC function Get-StartupProgramInventory.ps1 should exist" time="0.0165" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-StartupProgramInventory.ps1 is valid Powershell code" name="General Function Tests.Get-StartupProgramInventory has valid structure.Get-StartupProgramInventory.ps1 is valid Powershell code" time="0.0255" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-Asset has valid structure" executed="True" result="Failure" success="False" time="1.9358" asserts="0" description="General Function Tests.Get-Asset has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-Asset.ps1 should exist" name="General Function Tests.Get-Asset has valid structure.PUBLIC function Get-Asset.ps1 should exist" time="0.0226" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-Asset.ps1 is valid Powershell code" name="General Function Tests.Get-Asset has valid structure.Get-Asset.ps1 is valid Powershell code" time="0.0118" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-AssetType has valid structure" executed="True" result="Failure" success="False" time="2.0658" asserts="0" description="General Function Tests.Get-AssetType has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-AssetType.ps1 should exist" name="General Function Tests.Get-AssetType has valid structure.PUBLIC function Get-AssetType.ps1 should exist" time="0.0139" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-AssetType.ps1 is valid Powershell code" name="General Function Tests.Get-AssetType has valid structure.Get-AssetType.ps1 is valid Powershell code" time="0.01" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-BarcodeAsset has valid structure" executed="True" result="Failure" success="False" time="2.1898" asserts="0" description="General Function Tests.Get-BarcodeAsset has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-BarcodeAsset.ps1 should exist" name="General Function Tests.Get-BarcodeAsset has valid structure.PUBLIC function Get-BarcodeAsset.ps1 should exist" time="0.0141" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-BarcodeAsset.ps1 is valid Powershell code" name="General Function Tests.Get-BarcodeAsset has valid structure.Get-BarcodeAsset.ps1 is valid Powershell code" time="0.0158" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ManagedInstall has valid structure" executed="True" result="Failure" success="False" time="2.331" asserts="0" description="General Function Tests.Get-ManagedInstall has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ManagedInstall.ps1 should exist" name="General Function Tests.Get-ManagedInstall has valid structure.PUBLIC function Get-ManagedInstall.ps1 should exist" time="0.0221" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ManagedInstall.ps1 is valid Powershell code" name="General Function Tests.Get-ManagedInstall has valid structure.Get-ManagedInstall.ps1 is valid Powershell code" time="0.0108" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ManagedInstallMachineCompatibility has valid structure" executed="True" result="Failure" success="False" time="2.46" asserts="0" description="General Function Tests.Get-ManagedInstallMachineCompatibility has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ManagedInstallMachineCompatibility.ps1 should exist" name="General Function Tests.Get-ManagedInstallMachineCompatibility has valid structure.PUBLIC function Get-ManagedInstallMachineCompatibility.ps1 should exist" time="0.0229" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ManagedInstallMachineCompatibility.ps1 is valid Powershell code" name="General Function Tests.Get-ManagedInstallMachineCompatibility has valid structure.Get-ManagedInstallMachineCompatibility.ps1 is valid Powershell code" time="0.0111" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ReportingDefinition has valid structure" executed="True" result="Failure" success="False" time="2.6537" asserts="0" description="General Function Tests.Get-ReportingDefinition has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ReportingDefinition.ps1 should exist" name="General Function Tests.Get-ReportingDefinition has valid structure.PUBLIC function Get-ReportingDefinition.ps1 should exist" time="0.0538" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ReportingDefinition.ps1 is valid Powershell code" name="General Function Tests.Get-ReportingDefinition has valid structure.Get-ReportingDefinition.ps1 is valid Powershell code" time="0.0303" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ScriptRunStatus has valid structure" executed="True" result="Failure" success="False" time="2.7972" asserts="0" description="General Function Tests.Get-ScriptRunStatus has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ScriptRunStatus.ps1 should exist" name="General Function Tests.Get-ScriptRunStatus has valid structure.PUBLIC function Get-ScriptRunStatus.ps1 should exist" time="0.0243" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ScriptRunStatus.ps1 is valid Powershell code" name="General Function Tests.Get-ScriptRunStatus has valid structure.Get-ScriptRunStatus.ps1 is valid Powershell code" time="0.0133" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-Script has valid structure" executed="True" result="Failure" success="False" time="3.0793" asserts="0" description="General Function Tests.Get-Script has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-Script.ps1 should exist" name="General Function Tests.Get-Script has valid structure.PUBLIC function Get-Script.ps1 should exist" time="0.1723" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-Script.ps1 is valid Powershell code" name="General Function Tests.Get-Script has valid structure.Get-Script.ps1 is valid Powershell code" time="0.0116" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ScriptDependency has valid structure" executed="True" result="Failure" success="False" time="3.2028" asserts="0" description="General Function Tests.Get-ScriptDependency has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ScriptDependency.ps1 should exist" name="General Function Tests.Get-ScriptDependency has valid structure.PUBLIC function Get-ScriptDependency.ps1 should exist" time="0.0138" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ScriptDependency.ps1 is valid Powershell code" name="General Function Tests.Get-ScriptDependency has valid structure.Get-ScriptDependency.ps1 is valid Powershell code" time="0.0087" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ScriptTask has valid structure" executed="True" result="Failure" success="False" time="3.332" asserts="0" description="General Function Tests.Get-ScriptTask has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ScriptTask.ps1 should exist" name="General Function Tests.Get-ScriptTask has valid structure.PUBLIC function Get-ScriptTask.ps1 should exist" time="0.0189" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ScriptTask.ps1 is valid Powershell code" name="General Function Tests.Get-ScriptTask has valid structure.Get-ScriptTask.ps1 is valid Powershell code" time="0.0121" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.New-Asset has valid structure" executed="True" result="Failure" success="False" time="3.4599" asserts="0" description="General Function Tests.New-Asset has valid structure">
+                <results>
+                  <test-case description="PUBLIC function New-Asset.ps1 should exist" name="General Function Tests.New-Asset has valid structure.PUBLIC function New-Asset.ps1 should exist" time="0.0174" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="New-Asset.ps1 is valid Powershell code" name="General Function Tests.New-Asset has valid structure.New-Asset.ps1 is valid Powershell code" time="0.0219" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.New-Script has valid structure" executed="True" result="Failure" success="False" time="3.5954" asserts="0" description="General Function Tests.New-Script has valid structure">
+                <results>
+                  <test-case description="PUBLIC function New-Script.ps1 should exist" name="General Function Tests.New-Script has valid structure.PUBLIC function New-Script.ps1 should exist" time="0.0163" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="New-Script.ps1 is valid Powershell code" name="General Function Tests.New-Script has valid structure.New-Script.ps1 is valid Powershell code" time="0.0162" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.New-ScriptTask has valid structure" executed="True" result="Failure" success="False" time="3.7527" asserts="0" description="General Function Tests.New-ScriptTask has valid structure">
+                <results>
+                  <test-case description="PUBLIC function New-ScriptTask.ps1 should exist" name="General Function Tests.New-ScriptTask has valid structure.PUBLIC function New-ScriptTask.ps1 should exist" time="0.0194" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="New-ScriptTask.ps1 is valid Powershell code" name="General Function Tests.New-ScriptTask has valid structure.New-ScriptTask.ps1 is valid Powershell code" time="0.0092" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Invoke-Script has valid structure" executed="True" result="Failure" success="False" time="3.8755" asserts="0" description="General Function Tests.Invoke-Script has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Invoke-Script.ps1 should exist" name="General Function Tests.Invoke-Script has valid structure.PUBLIC function Invoke-Script.ps1 should exist" time="0.0114" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Invoke-Script.ps1 is valid Powershell code" name="General Function Tests.Invoke-Script has valid structure.Invoke-Script.ps1 is valid Powershell code" time="0.0082" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ArchiveAsset has valid structure" executed="True" result="Failure" success="False" time="3.9971" asserts="0" description="General Function Tests.Get-ArchiveAsset has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ArchiveAsset.ps1 should exist" name="General Function Tests.Get-ArchiveAsset has valid structure.PUBLIC function Get-ArchiveAsset.ps1 should exist" time="0.0177" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ArchiveAsset.ps1 is valid Powershell code" name="General Function Tests.Get-ArchiveAsset has valid structure.Get-ArchiveAsset.ps1 is valid Powershell code" time="0.0095" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Set-AssetAsArchived has valid structure" executed="True" result="Failure" success="False" time="4.1189" asserts="0" description="General Function Tests.Set-AssetAsArchived has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Set-AssetAsArchived.ps1 should exist" name="General Function Tests.Set-AssetAsArchived has valid structure.PUBLIC function Set-AssetAsArchived.ps1 should exist" time="0.0145" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Set-AssetAsArchived.ps1 is valid Powershell code" name="General Function Tests.Set-AssetAsArchived has valid structure.Set-AssetAsArchived.ps1 is valid Powershell code" time="0.0171" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ServiceDeskQueue has valid structure" executed="True" result="Failure" success="False" time="4.2476" asserts="0" description="General Function Tests.Get-ServiceDeskQueue has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ServiceDeskQueue.ps1 should exist" name="General Function Tests.Get-ServiceDeskQueue has valid structure.PUBLIC function Get-ServiceDeskQueue.ps1 should exist" time="0.0208" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ServiceDeskQueue.ps1 is valid Powershell code" name="General Function Tests.Get-ServiceDeskQueue has valid structure.Get-ServiceDeskQueue.ps1 is valid Powershell code" time="0.0119" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ServiceDeskQueueField has valid structure" executed="True" result="Failure" success="False" time="4.3822" asserts="0" description="General Function Tests.Get-ServiceDeskQueueField has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ServiceDeskQueueField.ps1 should exist" name="General Function Tests.Get-ServiceDeskQueueField has valid structure.PUBLIC function Get-ServiceDeskQueueField.ps1 should exist" time="0.0179" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ServiceDeskQueueField.ps1 is valid Powershell code" name="General Function Tests.Get-ServiceDeskQueueField has valid structure.Get-ServiceDeskQueueField.ps1 is valid Powershell code" time="0.017" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ServiceDeskTicketTemplate has valid structure" executed="True" result="Failure" success="False" time="4.5517" asserts="0" description="General Function Tests.Get-ServiceDeskTicketTemplate has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ServiceDeskTicketTemplate.ps1 should exist" name="General Function Tests.Get-ServiceDeskTicketTemplate has valid structure.PUBLIC function Get-ServiceDeskTicketTemplate.ps1 should exist" time="0.0143" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ServiceDeskTicketTemplate.ps1 is valid Powershell code" name="General Function Tests.Get-ServiceDeskTicketTemplate has valid structure.Get-ServiceDeskTicketTemplate.ps1 is valid Powershell code" time="0.0096" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ServiceDeskTicket has valid structure" executed="True" result="Failure" success="False" time="5.1054" asserts="0" description="General Function Tests.Get-ServiceDeskTicket has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ServiceDeskTicket.ps1 should exist" name="General Function Tests.Get-ServiceDeskTicket has valid structure.PUBLIC function Get-ServiceDeskTicket.ps1 should exist" time="0.2905" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ServiceDeskTicket.ps1 is valid Powershell code" name="General Function Tests.Get-ServiceDeskTicket has valid structure.Get-ServiceDeskTicket.ps1 is valid Powershell code" time="0.0707" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.New-ServiceDeskTicket has valid structure" executed="True" result="Failure" success="False" time="5.2595" asserts="0" description="General Function Tests.New-ServiceDeskTicket has valid structure">
+                <results>
+                  <test-case description="PUBLIC function New-ServiceDeskTicket.ps1 should exist" name="General Function Tests.New-ServiceDeskTicket has valid structure.PUBLIC function New-ServiceDeskTicket.ps1 should exist" time="0.0208" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="New-ServiceDeskTicket.ps1 is valid Powershell code" name="General Function Tests.New-ServiceDeskTicket has valid structure.New-ServiceDeskTicket.ps1 is valid Powershell code" time="0.0094" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Set-MachineInventory has valid structure" executed="True" result="Failure" success="False" time="5.4025" asserts="0" description="General Function Tests.Set-MachineInventory has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Set-MachineInventory.ps1 should exist" name="General Function Tests.Set-MachineInventory has valid structure.PUBLIC function Set-MachineInventory.ps1 should exist" time="0.0107" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Set-MachineInventory.ps1 is valid Powershell code" name="General Function Tests.Set-MachineInventory has valid structure.Set-MachineInventory.ps1 is valid Powershell code" time="0.0096" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Set-ServiceDeskTicket has valid structure" executed="True" result="Failure" success="False" time="5.547" asserts="0" description="General Function Tests.Set-ServiceDeskTicket has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Set-ServiceDeskTicket.ps1 should exist" name="General Function Tests.Set-ServiceDeskTicket has valid structure.PUBLIC function Set-ServiceDeskTicket.ps1 should exist" time="0.0205" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Set-ServiceDeskTicket.ps1 is valid Powershell code" name="General Function Tests.Set-ServiceDeskTicket has valid structure.Set-ServiceDeskTicket.ps1 is valid Powershell code" time="0.0113" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Remove-ServiceDeskTicket has valid structure" executed="True" result="Failure" success="False" time="5.8563" asserts="0" description="General Function Tests.Remove-ServiceDeskTicket has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Remove-ServiceDeskTicket.ps1 should exist" name="General Function Tests.Remove-ServiceDeskTicket has valid structure.PUBLIC function Remove-ServiceDeskTicket.ps1 should exist" time="0.0838" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Remove-ServiceDeskTicket.ps1 is valid Powershell code" name="General Function Tests.Remove-ServiceDeskTicket has valid structure.Remove-ServiceDeskTicket.ps1 is valid Powershell code" time="0.0314" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Get-ServiceDeskTicketChanges has valid structure" executed="True" result="Failure" success="False" time="6.4488" asserts="0" description="General Function Tests.Get-ServiceDeskTicketChanges has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Get-ServiceDeskTicketChanges.ps1 should exist" name="General Function Tests.Get-ServiceDeskTicketChanges has valid structure.PUBLIC function Get-ServiceDeskTicketChanges.ps1 should exist" time="0.1864" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Get-ServiceDeskTicketChanges.ps1 is valid Powershell code" name="General Function Tests.Get-ServiceDeskTicketChanges has valid structure.Get-ServiceDeskTicketChanges.ps1 is valid Powershell code" time="0.1532" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="General Function Tests.Set-Asset has valid structure" executed="True" result="Failure" success="False" time="6.6058" asserts="0" description="General Function Tests.Set-Asset has valid structure">
+                <results>
+                  <test-case description="PUBLIC function Set-Asset.ps1 should exist" name="General Function Tests.Set-Asset has valid structure.PUBLIC function Set-Asset.ps1 should exist" time="0.0239" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\public\*\.ps1' to exist, but it did not exist.
+at "$root\public\*\$function.ps1" | Should -Exist, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:47</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="Set-Asset.ps1 is valid Powershell code" name="General Function Tests.Set-Asset has valid structure.Set-Asset.ps1 is valid Powershell code" time="0.0172" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>ItemNotFoundException: Cannot find path 'C:\public' because it does not exist.</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\functions.Tests.ps1:51</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\PS\KaceSMA\tests\modules.Tests.ps1" executed="True" result="Failure" success="False" time="0.4413" asserts="0" description="C:\PS\KaceSMA\tests\modules.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="KaceSMA Module Tests" executed="True" result="Failure" success="False" time="0.272" asserts="0" description="KaceSMA Module Tests">
+            <results>
+              <test-suite type="TestFixture" name="KaceSMA Module Tests.Module Structure" executed="True" result="Failure" success="False" time="0.157" asserts="0" description="KaceSMA Module Tests.Module Structure">
+                <results>
+                  <test-case description="has root module named KaceSMA.psm1" name="KaceSMA Module Tests.Module Structure.has root module named KaceSMA.psm1" time="0.0231" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\Psake.psm1' to exist, but it did not exist.
+at "$root\$module.psm1" | Should -Exist, C:\PS\KaceSMA\tests\modules.Tests.ps1:8</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\modules.Tests.ps1:8</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="has a manifest file of KaceSMA.psm1" name="KaceSMA Module Tests.Module Structure.has a manifest file of KaceSMA.psm1" time="0.0195" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected path '\Psake.psd1' to exist, but it did not exist.
+at "$root\$module.psd1" | Should -Exist, C:\PS\KaceSMA\tests\modules.Tests.ps1:12</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, C:\PS\KaceSMA\tests\modules.Tests.ps1:12</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
